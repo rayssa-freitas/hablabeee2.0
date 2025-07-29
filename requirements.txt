@@ -1,0 +1,5 @@
+pandas
+googlemaps
+rich
+flask
+requests
