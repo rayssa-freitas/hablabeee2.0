@@ -3,18 +3,20 @@
 Este projeto utiliza a API do Google Maps para buscar locais próximos com base em um endereço fornecido. Ele retorna informações detalhadas sobre os estabelecimentos encontrados e permite baixar os resultados em um arquivo CSV.
 
 ## Funcionalidades
-- Buscar locais próximos a um endereço utilizando a API Places do Google.
-- Obter coordenadas geográficas de um endereço.
-- Consultar horários de funcionamento de estabelecimentos.
-- Exportar os resultados em um arquivo CSV.
-- Servir o arquivo CSV para download via Flask.
+- Busca locais de interesse próximos a uma coordenada (latitude, longitude).
+- Exibe nome, endereço, status de funcionamento, horários, localização e viewport no mapa.
+- Mostra os horários de funcionamento formatados e em português.
+- Exporta resultados em CSV e TXT (incluindo horários de pico/fluxo de pessoas).
+- Busca e exporta a movimentação de pessoas em cada local por dia/hora, usando scraping (google-popular-times).
+- Interface web responsiva (Bootstrap).
+- Possibilidade de rodar em modo CLI para automações e cargas em lote.
 
 ## Pré-requisitos
 
 Antes de rodar a aplicação, instale os seguintes pacotes:
 
 ```sh
-pip install googlemaps requests pandas flask
+pip install -r requirements.txt
 ```
 
 Também é necessário obter uma API Key do Google Maps e armazená-la no caminho `system/api_key.txt`.
@@ -23,7 +25,7 @@ Também é necessário obter uma API Key do Google Maps e armazená-la no caminh
 
 1. **Executar a aplicação**:
    ```sh
-   python main.py
+   python main.py web
    ```
 
 2. **Buscar locais próximos**:
