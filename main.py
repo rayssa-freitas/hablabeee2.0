@@ -3,8 +3,8 @@ import os
 import pandas as pd
 import ast
 import re
-
-from flask import Flask, render_template, request, jsonify, send_from_directory, abort, render_template_string, jsonify
+import json
+from flask import Flask, send_file, render_template, request, jsonify, send_from_directory, abort, render_template_string, jsonify
 from glob import glob
 from setup import *
 from places import search_places, get_api_key
@@ -90,6 +90,7 @@ def run_web():
         csv_filename = f"{zone}_near_{lat}_{lng}.csv"
         csv_path = os.path.join("system/results", csv_filename)
         download_url = f"/download/{csv_filename}"
+        download_url_txt= f"/download_txt?type={zone}&lat={lat}&lng={lng}"
 
         results = []
 
@@ -126,7 +127,8 @@ def run_web():
 
         return jsonify({
             'results': results,
-            'download_url': download_url
+            'download_url': download_url,
+            'download_url_txt':  download_url_txt,
         })
 
     @app.route('/download/<path:filename>')
@@ -136,8 +138,15 @@ def run_web():
             abort(404, "Arquivo não encontrado.")
         return send_from_directory('system/results', filename, as_attachment=True)
 
-    app.run(debug=True)
-
+    @app.route("/download_txt")
+    def download_txt():
+        tipo = request.args.get("type")
+        lat = request.args.get("lat")
+        lng = request.args.get("lng")
+        fname = f"{tipo}_near_{lat}_{lng}_popular_times.txt"
+        full = os.path.join("system/results", fname)
+        return send_from_directory("system/results", fname, as_attachment=True)
+    
     @app.route('/view')
     def view():
         filename = 'theater_near_-0.0101_-51.0512.csv'
@@ -148,6 +157,8 @@ def run_web():
         """, table=df.to_html())
 
     app.run(debug=True)
+
+
 
 # --- MODO CLI ---
 def run_cli():

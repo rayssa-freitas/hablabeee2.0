@@ -1,0 +1,505 @@
+﻿place_id	place_name	day	hour	movement
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	0	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	1	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	2	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	3	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	4	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	5	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	6	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	7	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	8	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	9	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	10	0.44
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	11	0.55
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	12	0.64
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	13	0.67
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	14	0.69
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	15	0.75
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	16	0.84
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	17	0.93
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	18	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	19	0.99
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	20	0.87
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	21	0.64
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	22	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Monday	23	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	0	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	1	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	2	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	3	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	4	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	5	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	6	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	7	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	8	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	9	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	10	0.48
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	11	0.58
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	12	0.68
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	13	0.7
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	14	0.73
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	15	0.77
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	16	0.83
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	17	0.94
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	18	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	19	0.97
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	20	0.84
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	21	0.62
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	22	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Tuesday	23	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	0	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	1	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	2	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	3	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	4	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	5	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	6	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	7	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	8	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	9	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	10	0.46
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	11	0.57
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	12	0.64
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	13	0.68
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	14	0.69
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	15	0.74
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	16	0.83
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	17	0.93
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	18	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	19	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	20	0.89
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	21	0.69
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	22	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Wednesday	23	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	0	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	1	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	2	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	3	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	4	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	5	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	6	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	7	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	8	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	9	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	10	0.4
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	11	0.52
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	12	0.62
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	13	0.66
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	14	0.69
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	15	0.75
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	16	0.83
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	17	0.93
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	18	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	19	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	20	0.89
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	21	0.67
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	22	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Thursday	23	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	0	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	1	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	2	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	3	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	4	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	5	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	6	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	7	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	8	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	9	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	10	0.42
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	11	0.56
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	12	0.66
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	13	0.7
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	14	0.72
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	15	0.75
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	16	0.82
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	17	0.92
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	18	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	19	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	20	0.9
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	21	0.69
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	22	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Friday	23	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	0	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	1	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	2	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	3	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	4	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	5	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	6	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	7	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	8	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	9	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	10	0.41
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	11	0.56
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	12	0.65
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	13	0.68
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	14	0.7
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	15	0.74
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	16	0.82
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	17	0.89
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	18	0.96
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	19	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	20	0.92
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	21	0.72
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	22	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Saturday	23	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	0	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	1	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	2	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	3	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	4	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	5	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	6	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	7	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	8	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	9	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	10	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	11	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	12	0.38
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	13	0.51
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	14	0.61
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	15	0.71
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	16	0.78
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	17	0.86
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	18	0.95
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	19	1.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	20	0.91
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	21	0.66
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	22	0.0
+ChIJOTjoHAXhYY0Rl1n2cYIbBwE	Macapá Shopping	Sunday	23	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	0	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	1	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	2	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	3	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	4	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	5	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	6	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	7	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	8	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	9	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	10	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	11	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	12	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	13	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	14	0.59
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	15	0.72
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	16	0.82
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	17	0.91
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	18	0.99
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	19	1.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	20	0.9
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	21	0.69
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	22	0.43
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Monday	23	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	0	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	1	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	2	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	3	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	4	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	5	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	6	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	7	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	8	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	9	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	10	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	11	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	12	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	13	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	14	0.61
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	15	0.74
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	16	0.84
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	17	0.93
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	18	1.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	19	0.99
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	20	0.88
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	21	0.67
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	22	0.42
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Tuesday	23	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	0	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	1	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	2	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	3	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	4	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	5	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	6	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	7	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	8	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	9	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	10	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	11	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	12	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	13	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	14	0.59
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	15	0.73
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	16	0.84
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	17	0.91
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	18	0.99
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	19	1.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	20	0.92
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	21	0.73
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	22	0.49
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Wednesday	23	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	0	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	1	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	2	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	3	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	4	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	5	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	6	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	7	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	8	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	9	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	10	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	11	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	12	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	13	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	14	0.58
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	15	0.72
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	16	0.83
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	17	0.93
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	18	0.99
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	19	1.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	20	0.91
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	21	0.7
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	22	0.44
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Thursday	23	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	0	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	1	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	2	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	3	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	4	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	5	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	6	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	7	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	8	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	9	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	10	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	11	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	12	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	13	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	14	0.6
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	15	0.73
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	16	0.83
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	17	0.9
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	18	0.99
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	19	1.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	20	0.91
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	21	0.73
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	22	0.46
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Friday	23	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	0	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	1	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	2	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	3	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	4	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	5	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	6	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	7	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	8	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	9	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	10	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	11	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	12	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	13	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	14	0.59
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	15	0.72
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	16	0.82
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	17	0.89
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	18	0.96
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	19	1.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	20	0.94
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	21	0.74
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	22	0.48
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Saturday	23	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	0	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	1	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	2	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	3	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	4	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	5	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	6	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	7	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	8	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	9	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	10	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	11	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	12	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	13	0.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	14	0.54
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	15	0.7
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	16	0.8
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	17	0.86
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	18	0.95
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	19	1.0
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	20	0.92
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	21	0.7
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	22	0.37
+ChIJjcTkSwbhYY0RRH0cfOKJ9pA	Moviecom	Sunday	23	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	0	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	1	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	2	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	3	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	4	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	5	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	6	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	7	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	8	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	9	0.55
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	10	0.78
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	11	0.94
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	12	1.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	13	0.97
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	14	0.92
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	15	0.91
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	16	0.94
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	17	0.92
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	18	0.82
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	19	0.58
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	20	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	21	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	22	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Monday	23	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	0	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	1	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	2	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	3	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	4	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	5	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	6	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	7	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	8	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	9	0.54
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	10	0.78
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	11	0.93
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	12	1.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	13	0.97
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	14	0.93
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	15	0.91
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	16	0.94
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	17	0.9
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	18	0.78
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	19	0.54
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	20	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	21	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	22	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Tuesday	23	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	0	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	1	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	2	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	3	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	4	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	5	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	6	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	7	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	8	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	9	0.52
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	10	0.75
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	11	0.93
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	12	1.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	13	0.98
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	14	0.93
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	15	0.9
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	16	0.93
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	17	0.9
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	18	0.78
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	19	0.53
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	20	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	21	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	22	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Wednesday	23	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	0	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	1	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	2	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	3	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	4	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	5	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	6	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	7	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	8	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	9	0.53
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	10	0.77
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	11	0.93
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	12	1.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	13	0.96
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	14	0.89
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	15	0.87
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	16	0.87
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	17	0.84
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	18	0.72
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	19	0.51
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	20	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	21	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	22	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Thursday	23	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	0	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	1	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	2	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	3	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	4	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	5	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	6	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	7	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	8	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	9	0.49
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	10	0.73
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	11	0.91
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	12	1.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	13	0.97
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	14	0.9
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	15	0.88
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	16	0.89
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	17	0.87
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	18	0.75
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	19	0.53
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	20	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	21	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	22	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Friday	23	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	0	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	1	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	2	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	3	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	4	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	5	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	6	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	7	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	8	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	9	0.49
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	10	0.75
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	11	0.94
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	12	1.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	13	0.93
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	14	0.84
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	15	0.79
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	16	0.76
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	17	0.72
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	18	0.6
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	19	0.43
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	20	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	21	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	22	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Saturday	23	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	0	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	1	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	2	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	3	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	4	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	5	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	6	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	7	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	8	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	9	0.88
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	10	1.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	11	0.94
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	12	0.76
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	13	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	14	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	15	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	16	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	17	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	18	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	19	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	20	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	21	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	22	0.0
+ChIJkWTo6uLgYY0RMAORtzsC4FU	Villa Nova Shopping	Sunday	23	0.0

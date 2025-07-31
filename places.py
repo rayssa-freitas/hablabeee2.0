@@ -4,7 +4,8 @@ import os
 import pandas as pd
 import json
 from flask import Flask, send_file, abort
-
+import populartimes
+import requests
 from setup import interest_zones, path_system
 
 # Função para obter a API Key do arquivo
@@ -114,6 +115,45 @@ def convert_to_24h(time_str):
         # fallback
         return time_str
 
+def get_popular_times(api_key, place_id):
+    try:
+        # Busca por popular times de um único local pelo place_id
+        res = populartimes.get_id(api_key, place_id)
+        if 'populartimes' in res:
+            return res['populartimes']
+        else:
+            return None
+    except Exception as e:
+        print(f'Erro ao obter popular times: {e}')
+        return None
+    
+def normalize_popular_times(populartimes_data):
+    # populartimes_data: [{'name': 'Monday', 'data': [0, 5, 10, ...]}]
+    records = []
+    for day_info in populartimes_data:
+        day = day_info["name"]
+        values = day_info["data"]
+        max_val = max(values) if values and max(values) > 0 else 1
+        normalized = [round(v / max_val, 2) for v in values]
+        for hour, score in enumerate(normalized):
+            records.append({
+                "day": day_info["name"],
+                "hour": hour,
+                "movement": score
+            })
+    return pd.DataFrame(records)
+
+    return pd.DataFrame(records)
+
+def save_peak_hours_txt(df: pd.DataFrame, filename: str):
+    """
+    Salva o DataFrame de horários de pico em TXT tab-delimitado.
+    Garante que o diretório exista.
+    """
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    df.to_csv(filename, sep='\t', index=False, encoding='utf-8-sig')
+    print(f"Arquivo de pico salvo em: {filename}")
+            
 # Função para obter a cidade/estado correspondents as coordenadas
 def get_city_state(latitude, longitude, api_key):
     gmaps = googlemaps.Client(key=api_key)
@@ -221,8 +261,30 @@ def search_places(
     try:
         df.to_csv(file_name, sep=';', index=False, encoding='utf-8-sig')
         print(f"Resultados salvos em: {file_name}")
-        return file_name 
         
+        peak_tables = []
+        for place in places_list:
+            pop_data = get_popular_times(key, place['id'])
+            if pop_data:
+                df_norm = normalize_popular_times(pop_data)
+                # adiciona colunas de identificação do local
+                df_norm.insert(0, 'place_id',   place['id'])
+                df_norm.insert(1, 'place_name', place['name'])
+                peak_tables.append(df_norm)
+
+            if peak_tables:
+                df_peak = pd.concat(peak_tables, ignore_index=True)
+            else:
+                # gera um DataFrame vazio com as colunas
+                df_peak = pd.DataFrame(columns=["place_id","place_name","day","hour","movement"])
+
+            txt_name = f"{place_type}_near_{lat}_{lng}_popular_times.txt"
+            txt_path = os.path.join(path_system, "results", txt_name)
+            save_peak_hours_txt(df_peak, txt_path)
+            print(f"Horários de pico salvos em: {txt_path}")
+    
+        return file_name
+
     except Exception as e:
         print(f"Erro ao salvar o CSV: {e}")
     

@@ -63,6 +63,7 @@
       <div class="d-flex justify-content-between align-items-center mb-2">
         <h5>Resultados</h5>
         <a id="downloadLink" class="btn btn-outline-secondary btn-sm">↓ Download CSV</a>
+        <a id="downloadLinkTxt" class="btn btn-outline-secondary btn-sm ms-2">↓ Download TXT Horários Pico</a>
       </div>
       <div class="table-responsive">
         <table class="table table-striped table-hover">
@@ -192,6 +193,11 @@ document.getElementById('searchForm').addEventListener('submit', async e => {
   // Exibe seção de resultados
   document.getElementById('resultsSection').style.display = 'block';
   window.scrollTo({ top: document.getElementById('resultsSection').offsetTop, behavior: 'smooth' });
+
+  const dlTxt = document.getElementById('downloadLinkTxt');
+  dlTxt.href = data.download_url_txt;
+  dlTxt.download = '';
+  dlTxt.style.display = 'inline-block';
 });
   </script>
 </body>
