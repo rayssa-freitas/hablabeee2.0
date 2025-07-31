@@ -4,7 +4,6 @@ import os
 import pandas as pd
 import json
 from flask import Flask, send_file, abort
-import webbrowser
 
 from setup import interest_zones, path_system
 
@@ -19,7 +18,7 @@ def get_api_key(file_path='system/api_key.txt'):
     except Exception as e:
         print(f"Erro ao ler a API Key: {e}")
         return None
-    print(get_api_key)
+
 # Função para converter um endereço em coordenadas geográficas
 def get_coordinates(address, api_key):
     gmaps = googlemaps.Client(key=api_key)
@@ -98,7 +97,8 @@ def format_weekday_text(weekday_text):
                         converted_parts.append(part)
                 hours = " / ".join(converted_parts)
 
-            formatted_hours.append(f"  - {day_pt}: {hours}")
+            formatted_hours.append(f"{day_en}: {hours}")
+
         else:
             formatted_hours.append(f"  - {entry}")
 
@@ -180,10 +180,18 @@ def search_places(
     if "results" in data:
         for place in data["results"]:
             place_id = place.get("place_id")
-            weekday_text, open_now = get_place_details(place_id, api_key)
-            if not isinstance(weekday_text, list):
+            if place_id:
+                weekday_text, open_now = get_place_details(place_id, api_key)
+                if not isinstance(weekday_text, list):
+                    weekday_text = []
+                formatted_weekday = format_weekday_text(weekday_text)
+                print("Horários brutos retornados:", weekday_text)
+            else:
                 weekday_text = []
-
+                open_now = None
+                formatted_weekday = []
+                print("Horários brutos retornados: Não disponível (place_id ausente)")
+            
             viewport = place.get("geometry", {}).get("viewport", {})
 
             places_list.append({
@@ -195,7 +203,7 @@ def search_places(
                 "business_status": place.get("business_status"),
                 "latitude": place["geometry"]["location"]["lat"],
                 "longitude": place["geometry"]["location"]["lng"],
-                "weekday_text": weekday_text,
+                "weekday_text": json.dumps(formatted_weekday, ensure_ascii=False),
                 "viewport": viewport
             })
         print("Horários brutos retornados:", weekday_text)
@@ -213,9 +221,8 @@ def search_places(
     try:
         df.to_csv(file_name, sep=';', index=False, encoding='utf-8-sig')
         print(f"Resultados salvos em: {file_name}")
+        return file_name 
         
-        webbrowser.open("http://127.0.0.1:5000/download")
-
     except Exception as e:
         print(f"Erro ao salvar o CSV: {e}")
     
@@ -226,7 +233,7 @@ def search_places(
         print(f"Endereço: {place['address']}")
         print(f"Status: {place['business_status']}")
         print(f"Está aberto agora? {'Sim' if place['open_now'] else 'Não'}")
-        print("Horários da Semana:\n" + format_weekday_text(place['weekday_text']))
+        print("Horários da Semana:\n" + "\n".join(format_weekday_text(place['weekday_text'])))
         print(f"Localização: {place['latitude']}, {place['longitude']}")
         print(f"Viewport: {place['viewport']}")
 
@@ -249,5 +256,5 @@ if __name__ == "__main__":
     app.run(debug=False, use_reloader=False)
     
 # Teste da função com um endereço fixo
-api_key = get_api_key()
-search_places(-27.5828, -48.5047, "health_center")
+    api_key = get_api_key()
+    search_places(-27.5828, -48.5047, "health_center")

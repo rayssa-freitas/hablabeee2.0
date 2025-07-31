@@ -120,7 +120,7 @@ function formatarHorariosSemana(weekdayTextList) {
 
     const [diaEN, horasRaw] = linha.split(/:\s(.+)/);
 
-    const diaPT = mapaDiasENtoPT[diaEN.trim()];
+    const diaPT = mapaDiasENtoPT[diaEN.trim() || diaEN.trim()];
 
     if (!horasRaw || /closed/i.test(horasRaw)) {
       horarios[diaPT] = 'Fechado';
@@ -185,7 +185,7 @@ document.getElementById('searchForm').addEventListener('submit', async e => {
 
   // Atualiza link de download
   const dl = document.getElementById('downloadLink');
-  dl.href = `/download?type=${type}&lat=${lat}&lng=${lng}`;
+  dl.href = data.download_url;
   dl.download = '';
   dl.style.display = 'inline-block';
 

@@ -3,9 +3,9 @@ import os
 import pandas as pd
 import ast
 import re
-from glob import glob
-from flask import Flask, render_template, request, jsonify, send_from_directory, abort, render_template_string, jsonify
 
+from flask import Flask, render_template, request, jsonify, send_from_directory, abort, render_template_string, jsonify
+from glob import glob
 from setup import *
 from places import search_places, get_api_key
 from routes_matrix import routesMatrix, concatenate_dataframes
@@ -94,14 +94,16 @@ def run_web():
         results = []
 
         try:
-            df = pd.read_csv(csv_path, sep=';', encoding='utf-8-sig')
+            with open(csv_path, 'r', encoding='utf-8-sig', errors='replace') as f:
+                df = pd.read_csv(f, sep=';')
             for _, row in df.iterrows():
                 weekday_text_raw = row.get('weekday_text', '')
-                weekday_text_list = (
-                weekday_text_raw.split('\n')
-                if isinstance(weekday_text_raw, str)     # aqui!
-                else []
-            )
+                if isinstance(weekday_text_raw, str):
+                    weekday_text_list = json.loads(weekday_text_raw)
+                    if weekday_text_list == ["Não disponível"]:
+                        weekday_text_list = ['Horário não informado']
+                else:
+                    weekday_text_list = ['Horário não informado']
 
                 results.append({
                     'name': row.get('name', ''),
@@ -117,7 +119,10 @@ def run_web():
         except Exception as e:
             print("Erro ao ler CSV:", e)
             return jsonify({'error': 'Erro ao ler resultados'}), 500
-            
+
+        #teste   
+        print("weekday_text_raw:", weekday_text_raw)
+        print("weekday_text_list:", weekday_text_list)
 
         return jsonify({
             'results': results,
@@ -146,7 +151,6 @@ def run_web():
 
 # --- MODO CLI ---
 def run_cli():
-    print(get_api_key)
     has_setup = open(os.path.join(path_system, 'has_setup.txt'), 'r').read().strip()
     if has_setup == '0':
         os.system('pip install --upgrade pip')
