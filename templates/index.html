@@ -12,7 +12,7 @@
     .card { border-radius: .75rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     table thead { background: #e9ecef; }
     td { vertical-align: top; }
-    .nowrap-btn { white-space: nowrap; }
+    .nowrap-btn { white-space: nowrap; min-width: 113px;}
   </style>
 </head>
 <body>
@@ -20,7 +20,7 @@
     <h1 class="fw-light">Busca de Locais Próximos</h1>
   </header>
 
-  <main class="container">
+  <main class="container-xxl" style="max-width: 1500px;">
     <div class="card p-4 mb-4">
       <form id="searchForm" class="row g-3">
         <div class="col-md-5">
@@ -28,7 +28,7 @@
           <select id="zoneSelect" class="form-select" required>
             <option value="">Selecione a Zona de Interesse</option>
             <!-- Preencha com suas zonas de intereste -->
-            <option value="school">Escola Pública</option>
+            <option value="school">Escola</option>
             <option value="hospital">Hospital</option>
             <option value="movie_theater">Cinema</option>
             <option value="theater">Teatro</option>
@@ -37,161 +37,193 @@
             <option value="convention_center">Centro de Convenções</option>
             <option value="museum">Museu</option>
             <option value="hotel">Hotel</option>
-            <option value="shopping_center">Shopping Center</option>
+            <option value="guesthouse">Pousada</option>
+            <option value="shopping_center">Shopping</option>
+            <option value="business">Comércio</option>
+            <option value="retail">Varejo</option>
+            <option value="shop">Loja</option>
             <option value="restaurant">Restaurante</option>
             <option value="university">Universidade</option>
             <option value="health_center">Posto de Saúde</option>
-            <!-- …ou adicione mais -->
+            <option value="data_center">Processamento de dados</option>
           </select>
         </div>
+
         <div class="col-md-3">
           <label for="latInput" class="form-label">Latitude</label>
-          <input type="number" step="any" id="latInput" class="form-control" placeholder="Informe a Latitude" required>
+          <input id="latInput" type="text" class="form-control" placeholder="-23.55052" required>
         </div>
         <div class="col-md-3">
           <label for="lngInput" class="form-label">Longitude</label>
-          <input type="number" step="any" id="lngInput" class="form-control" placeholder="Informe a Lagitude" required>
+          <input id="lngInput" type="text" class="form-control" placeholder="-46.63331" required>
         </div>
+
         <div class="col-md-1 d-flex align-items-end">
           <button type="submit" class="btn btn-primary w-100 nowrap-btn">Pesquisar</button>
         </div>
       </form>
     </div>
 
-    <!-- Área de resultados -->
-    <div id="resultsSection" style="display:none;">
-      <div class="d-flex justify-content-between align-items-center mb-2">
-        <h5>Resultados</h5>
-        <a id="downloadLink" class="btn btn-outline-secondary btn-sm">↓ Download CSV</a>
+    <div id="resultsSection" class="card p-4" style="display:none;">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0">Resultados</h5>
+        <a id="downloadLink" href="#" class="btn btn-outline-secondary btn-sm" style="display:none;">Baixar CSV</a>
       </div>
+
       <div class="table-responsive">
-        <table class="table table-striped table-hover">
+        <table class="table table-sm table-striped align-middle">
           <thead>
             <tr>
               <th>Nome</th>
-              <th>Cidade/Estado</th>
+              <th>Cidade/UF</th>
               <th>Endereço</th>
               <th>Status</th>
-              <th>Aberto Agora</th>
+              <th>Aberto agora?</th>
               <th>Horários</th>
-              <th>Latitude</th>
-              <th>Longitude</th>
+              <th>Lat</th>
+              <th>Lng</th>
               <th>Viewport</th>
             </tr>
           </thead>
-          <tbody id="resultsBody">
-            <!-- preenchido por JS -->
-          </tbody>
+          <tbody id="resultsBody"></tbody>
         </table>
       </div>
     </div>
   </main>
 
-  <!-- Bootstrap 5 + JS customizado -->
+  <!-- Bootstrap 5 JS (opcional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
+/* PATCH 1 — Função robusta para horários (aceita PT já formatado ou EN “cru”) */
 function formatarHorariosSemana(weekdayTextList) {
+  if (!Array.isArray(weekdayTextList) || weekdayTextList.length === 0) {
+    return 'Não disponível';
+  }
 
-  const mapaDiasENtoPT = {
-    'Monday': 'Segunda-feira',
-    'Tuesday': 'Terça-feira',
-    'Wednesday': 'Quarta-feira',
-    'Thursday': 'Quinta-feira',
-    'Friday': 'Sexta-feira',
-    'Saturday': 'Sábado',
-    'Sunday': 'Domingo'
+  const clean = (s) => (s || '')
+    .normalize('NFKD')
+    .replace(/[\u2009\u200B-\u200D\u202F\u2060\uFEFF]/g, '')
+    .trim();
+
+  const cleaned = weekdayTextList.map(clean);
+
+  // Se já veio em PT-BR, só exibe
+  const rePtDay = /^(Segunda-feira|Terça-feira|Quarta-feira|Quinta-feira|Sexta-feira|Sábado|Domingo):\s/i;
+  if (cleaned.some(l => rePtDay.test(l))) {
+    return cleaned
+      .map(l => l.replace(/\s?[–-]\s?/g, ' – '))
+      .join('<br>');
+  }
+
+  // Converter EN -> PT + 12h -> 24h
+  const mapaENtoPT = {
+    Monday: 'Segunda-feira',
+    Tuesday: 'Terça-feira',
+    Wednesday: 'Quarta-feira',
+    Thursday: 'Quinta-feira',
+    Friday: 'Sexta-feira',
+    Saturday: 'Sábado',
+    Sunday: 'Domingo'
   };
-
-    const dias = [
-    'Segunda-feira',
-    'Terça-feira',
-    'Quarta-feira',
-    'Quinta-feira',
-    'Sexta-feira',
-    'Sábado',
-    'Domingo'
-  ];
-
+  const ordem = ['Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado','Domingo'];
   const horarios = {};
 
-  (weekdayTextList || []).forEach(linha => {
-    // Remove caracteres invisíveis (espaços, etc)
-    linha = linha.normalize("NFKD").replace(/[\u200B-\u200D\u202F\u2060\uFEFF]/g, '');
-
-    const [diaEN, horasRaw] = linha.split(/:\s(.+)/);
-
-    const diaPT = mapaDiasENtoPT[diaEN.trim() || diaEN.trim()];
+  cleaned.forEach(linha => {
+    const parts = linha.split(/:\s(.+)/);
+    if (parts.length < 2) return;
+    const diaEN = (parts[0] || '').trim();
+    const horasRaw = (parts[1] || '').trim();
+    const diaPT = mapaENtoPT[diaEN] || diaEN;
 
     if (!horasRaw || /closed/i.test(horasRaw)) {
       horarios[diaPT] = 'Fechado';
     } else if (/open 24 hours/i.test(horasRaw)) {
       horarios[diaPT] = 'Aberto 24 horas';
     } else {
-      // Converte horários AM/PM para 24h
-      const intervalos = horasRaw.split(',').map(intervalo => {
-        return intervalo.replace(/(\d{1,2}):(\d{2}) ?(AM|PM)/gi, (_, h, min, ampm) => {
-          h = parseInt(h);
-          if (ampm.toUpperCase() === 'PM' && h !== 12) h += 12;
-          if (ampm.toUpperCase() === 'AM' && h === 12) h = 0;
-          return `${h.toString().padStart(2, '0')}:${min}`;
-        }).replace(/\s?[–-]\s?/g, ' – ').trim();
-      });
+      const intervalos = horasRaw.split(',').map(intervalo =>
+        intervalo
+          .replace(/(\d{1,2}):(\d{2})\s?(AM|PM)/gi, (_, h, min, ampm) => {
+            let hh = parseInt(h, 10);
+            if (ampm.toUpperCase() === 'PM' && hh !== 12) hh += 12;
+            if (ampm.toUpperCase() === 'AM' && hh === 12) hh = 0;
+            return `${hh.toString().padStart(2,'0')}:${min}`;
+          })
+          .replace(/\s?[–-]\s?/g, ' – ')
+          .trim()
+      );
       horarios[diaPT] = intervalos.join(' / ');
     }
   });
 
-
-
-  return dias.map(dia => `${dia}: ${horarios[dia] || 'Fechado'}`).join('<br>');
+  return ordem
+    .map(d => `${d}: ${Object.prototype.hasOwnProperty.call(horarios, d) ? horarios[d] : 'Não disponível'}`)
+    .join('<br>');
 }
 
+/* PATCH 2 — Submit: desabilita botão, busca, preenche tabela, atualiza download, mostra seção, limpa inputs */
 document.getElementById('searchForm').addEventListener('submit', async e => {
   e.preventDefault();
+
+  const form = e.currentTarget;
+  const btn = form.querySelector('button[type="submit"]');
   const type = document.getElementById('zoneSelect').value;
   const lat  = document.getElementById('latInput').value;
   const lng  = document.getElementById('lngInput').value;
 
-  const resp = await fetch(`/search?type=${type}&lat=${lat}&lng=${lng}`);
-  const data = await resp.json();
+  const originalLabel = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Pesquisando...';
 
-  if (!resp.ok || !data.results) {
-    alert('Erro na busca: ' + (data.error || 'Erro desconhecido'));
-    return;
+  try {
+    const resp = await fetch(`/search?type=${encodeURIComponent(type)}&lat=${encodeURIComponent(lat)}&lng=${encodeURIComponent(lng)}`);
+    const data = await resp.json();
+
+    if (!resp.ok || !data.results) {
+      alert('Erro na busca: ' + (data.error || 'Erro desconhecido'));
+      return;
+    }
+
+    const tbody = document.getElementById('resultsBody');
+    tbody.innerHTML = '';
+
+    data.results.forEach(p => {
+      const horariosFormatados = formatarHorariosSemana(p.weekday_text);
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${p.name}</td>
+        <td>${p.city_state}</td>
+        <td>${p.address}</td>
+        <td>${p.business_status}</td>
+        <td>${p.open_now ? 'Sim' : 'Não'}</td>
+        <td>${horariosFormatados}</td>
+        <td>${p.latitude}</td>
+        <td>${p.longitude}</td>
+        <td>
+          NE: (${p.viewport?.northeast?.lat?.toFixed?.(5)}, ${p.viewport?.northeast?.lng?.toFixed?.(5)})<br>
+          SW: (${p.viewport?.southwest?.lat?.toFixed?.(5)}, ${p.viewport?.southwest?.lng?.toFixed?.(5)})
+        </td>
+      `;
+      tbody.appendChild(row);
+    });
+
+    // Atualiza link de download e mostra resultados
+    const dl = document.getElementById('downloadLink');
+    dl.href = data.download_url;
+    dl.download = '';
+    dl.style.display = 'inline-block';
+
+    document.getElementById('resultsSection').style.display = 'block';
+    window.scrollTo({ top: document.getElementById('resultsSection').offsetTop, behavior: 'smooth' });
+
+    // Limpa inputs após a busca
+    form.reset();
+  } catch (err) {
+    alert('Erro de rede.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = originalLabel;
   }
-
-  const tbody = document.getElementById('resultsBody');
-  tbody.innerHTML = '';
-
-  data.results.forEach(p => {
-    const horariosFormatados = formatarHorariosSemana(p.weekday_text);
-
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${p.name}</td>
-      <td>${p.city_state}</td>
-      <td>${p.address}</td>
-      <td>${p.business_status}</td>
-      <td>${p.open_now ? 'Sim' : 'Não'}</td>
-      <td>${horariosFormatados}</td>
-      <td>${p.latitude}</td>
-      <td>${p.longitude}</td>
-      <td>
-        NE: (${p.viewport?.northeast?.lat?.toFixed(5)}, ${p.viewport?.northeast?.lng?.toFixed(5)})<br>
-        SW: (${p.viewport?.southwest?.lat?.toFixed(5)}, ${p.viewport?.southwest?.lng?.toFixed(5)})
-      </td>
-    `;
-    tbody.appendChild(row);
-  });
-
-  // Atualiza link de download
-  const dl = document.getElementById('downloadLink');
-  dl.href = data.download_url;
-  dl.download = '';
-  dl.style.display = 'inline-block';
-
-  // Exibe seção de resultados
-  document.getElementById('resultsSection').style.display = 'block';
-  window.scrollTo({ top: document.getElementById('resultsSection').offsetTop, behavior: 'smooth' });
 });
   </script>
 </body>

@@ -103,10 +103,10 @@ ___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__\n"""
 
 wall_top = '______________________________________________________________________'
 
-# Imprime uma parede com altura definida
-def build_wall(height: int):
-    print(f'[orange1]{wall_top}\n{wall*height}\n')
-
+def build_wall(n: int = 1):
+    # imprime a “parede” n vezes
+    print('\n'.join([wall_top] * n))
+    
 # Limpa a tela do terminal 
 clean = '\n'*50
 def clear_screen():
