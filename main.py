@@ -4,6 +4,7 @@ import json
 import pandas as pd
 import ast
 import re
+import math
 
 from flask import Flask, render_template, request, jsonify, send_from_directory, abort, render_template_string
 from glob import glob
@@ -25,6 +26,24 @@ if not g_api_key:
 # -------------------------------------------------------------------
 # WEB
 # -------------------------------------------------------------------
+def _clean_for_json(obj):
+    """Substitui NaN/Inf por None recursivamente em dicts/listas."""
+    if isinstance(obj, dict):
+        return {k: _clean_for_json(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_clean_for_json(v) for v in obj]
+    try:
+        # pandas/numpy NaN
+        if pd.isna(obj):
+            return None
+    except Exception:
+        pass
+    # float('nan') ou +/-inf puros
+    if isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
+        return None
+    return obj
+
+
 def run_web():
     @app.route('/')
     def index():
@@ -40,8 +59,11 @@ def run_web():
             return jsonify({'error': 'Faltam parâmetros: type, lat, lng'}), 400
 
         print(f"Rodando search_places para {place_type} em ({lat}, {lng})")
-        # Gera/atualiza o CSV
-        search_places(lat, lng, place_type, api_key=g_api_key)
+        try:
+            search_places(lat, lng, place_type, api_key=g_api_key)
+        except Exception as e:
+            app.logger.exception("search_places falhou")
+            return jsonify({'error': f'Falha ao consultar Places ({type(e).__name__})', 'detail': str(e)}), 502
 
         csv_filename = make_csv_filename(place_type, lat, lng)
         csv_path = os.path.join("system", "results", csv_filename)
@@ -52,7 +74,14 @@ def run_web():
 
         results = []
         try:
-            df = pd.read_csv(csv_path, sep=';', encoding='utf-8-sig')
+            df = pd.read_csv(
+            csv_path,
+            sep=';',
+            encoding='utf-8-sig',
+            keep_default_na=False,   # não transformar vazio em NaN
+            na_values=[],            # não considerar nenhum valor como NA
+            dtype=str                # tudo vem como string (evita NaN)
+        )
             for _, row in df.iterrows():
                 weekday_text_raw = row.get('weekday_text', '')
                 try:
@@ -75,6 +104,15 @@ def run_web():
                     except Exception:
                         viewport = {}
 
+                types_raw = row.get('types', '[]')
+                try:
+                    types_list = json.loads(types_raw) if isinstance(types_raw, str) else (types_raw or [])
+                    if not isinstance(types_list, list):
+                        types_list = [str(types_list)]
+                except Exception:
+                    # fallback bem tolerante
+                    types_list = [t.strip().strip("'\"") for t in str(types_raw).strip("[]").split(",") if t.strip()]
+
                 results.append({
                     'name': row.get('name', ''),
                     'city_state': row.get('city_state', ''),
@@ -83,6 +121,8 @@ def run_web():
                     'open_now': str(row.get('open_now', '')).strip().lower() == 'true',
                     'weekday_text': weekday_text_list,
                     'weekday_map': weekday_map,
+                    'types': types_list,
+                    'search_type': row.get('search_type',''),
                     'latitude': row.get('latitude', ''),
                     'longitude': row.get('longitude', ''),
                     'viewport': viewport
@@ -91,10 +131,12 @@ def run_web():
             print("Erro ao ler CSV:", e)
             return jsonify({'error': 'Erro ao ler resultados'}), 500
 
-        return jsonify({
+        payload = {
             'results': results,
             'download_url': download_url
-        })
+        }
+        return jsonify(_clean_for_json(payload))
+    
 
     @app.route('/download/<path:filename>')
     def download_file(filename):

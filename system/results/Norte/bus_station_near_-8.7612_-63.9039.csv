@@ -1,0 +1,2 @@
+﻿id;city_state;name;address;open_now;business_status;latitude;longitude;weekday_text;types;search_type;viewport
+ChIJN9CRqjlDMpIRBjrWYn2M5kA;Porto Velho/RO;Terminal de Ônibus da Policlínica Oswaldo Cruz;Avenida Governador Jorge Teixeira - Industrial, Porto Velho;False;OPERATIONAL;-8.7350233;-63.89075549999999;"[""Não disponível""]";"[""bus_station"", ""transit_station"", ""point_of_interest"", ""establishment""]";bus_station;{'northeast': {'lat': -8.733693819708495, 'lng': -63.88950636970849}, 'southwest': {'lat': -8.7363917802915, 'lng': -63.89220433029151}}

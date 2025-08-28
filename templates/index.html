@@ -45,7 +45,6 @@
             <option value="restaurant">Restaurante</option>
             <option value="university">Universidade</option>
             <option value="health_center">Posto de Saúde</option>
-            <option value="data_center">Processamento de dados</option>
           </select>
         </div>
 
@@ -80,6 +79,7 @@
               <th>Status</th>
               <th>Aberto agora?</th>
               <th>Horários</th>
+              <th>Tipos</th>
               <th>Lat</th>
               <th>Lng</th>
               <th>Viewport</th>
@@ -177,11 +177,18 @@ document.getElementById('searchForm').addEventListener('submit', async e => {
 
   try {
     const resp = await fetch(`/search?type=${encodeURIComponent(type)}&lat=${encodeURIComponent(lat)}&lng=${encodeURIComponent(lng)}`);
-    const data = await resp.json();
+
+    const ct = (resp.headers.get('content-type') || '').toLowerCase();
+    let data;
+    if (ct.includes('application/json')) {
+      data = await resp.json();
+    } else {
+      const text = await resp.text();
+      throw new Error(`HTTP ${resp.status} ${resp.statusText} — resposta não-JSON: ${text.slice(0,200)}`);
+    }
 
     if (!resp.ok || !data.results) {
-      alert('Erro na busca: ' + (data.error || 'Erro desconhecido'));
-      return;
+      throw new Error(data.error || 'Erro desconhecido');
     }
 
     const tbody = document.getElementById('resultsBody');
@@ -189,6 +196,15 @@ document.getElementById('searchForm').addEventListener('submit', async e => {
 
     data.results.forEach(p => {
       const horariosFormatados = formatarHorariosSemana(p.weekday_text);
+      const tipos = Array.isArray(p.types)
+      ? p.types
+      : (typeof p.types === 'string'
+          ? p.types.split(',').map(s => s.trim()).filter(Boolean)
+          : []);
+      const typesChips = tipos.length
+        ? tipos.map(t => `<span class="badge bg-secondary me-1">${t}</span>`).join('')
+        : '-';
+      
       const row = document.createElement('tr');
       row.innerHTML = `
         <td>${p.name}</td>
@@ -197,6 +213,7 @@ document.getElementById('searchForm').addEventListener('submit', async e => {
         <td>${p.business_status}</td>
         <td>${p.open_now ? 'Sim' : 'Não'}</td>
         <td>${horariosFormatados}</td>
+        <td>${typesChips}</td>
         <td>${p.latitude}</td>
         <td>${p.longitude}</td>
         <td>
@@ -219,7 +236,8 @@ document.getElementById('searchForm').addEventListener('submit', async e => {
     // Limpa inputs após a busca
     form.reset();
   } catch (err) {
-    alert('Erro de rede.');
+    console.error('Falha na busca:', err);
+    alert('Erro na busca: ' + (err?.message || err));
   } finally {
     btn.disabled = false;
     btn.textContent = originalLabel;

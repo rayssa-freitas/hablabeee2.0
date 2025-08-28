@@ -44,13 +44,12 @@ interest_zones = [
     "hotel?5?hotel",
     "pousada?5?guesthouse",
     "shopping center?5?shopping_center",
-    "comercio?5?business",
+    "centro comercial?5?business",
     "varejo?5?retail",
     "loja?5?shop",
     "restaurante?5?restaurant",
     "universidade?5?university",
     "posto de saude?5?health_center",
-    "processamento de dados?5?data_center",
     ]
 
 

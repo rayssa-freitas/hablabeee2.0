@@ -1,0 +1,2 @@
+﻿id;city_state;name;address;open_now;business_status;latitude;longitude;weekday_text;types;search_type;viewport
+ChIJhyDt3nbLJJMRelTNNSFYoVg;Palmas/TO;Terminal Rodoviário de Palmas;Av. Hélio, 125 - Plano Diretor Sul, Palmas;False;OPERATIONAL;-10.2567894;-48.3129285;"[""Não disponível""]";"[""bus_station"", ""transit_station"", ""point_of_interest"", ""establishment""]";bus_station;{'northeast': {'lat': -10.2552857697085, 'lng': -48.3115822197085}, 'southwest': {'lat': -10.2579837302915, 'lng': -48.3142801802915}}

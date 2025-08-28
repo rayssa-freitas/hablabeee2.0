@@ -190,7 +190,8 @@ def search_places(
                 open_now = None
                 formatted_weekday = []
                 print("Horários brutos retornados: Não disponível (place_id ausente)")
-
+            
+            tipos = place.get("types", [])
             viewport = place.get("geometry", {}).get("viewport", {})
             places_list.append({
                 "id": place_id,
@@ -202,6 +203,8 @@ def search_places(
                 "latitude": place["geometry"]["location"]["lat"],
                 "longitude": place["geometry"]["location"]["lng"],
                 "weekday_text": json.dumps(formatted_weekday, ensure_ascii=False),
+                "types": json.dumps(tipos, ensure_ascii=False),
+                "search_type": str(place_type), 
                 "viewport": viewport
             })
 
